@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>born</title>
+</head>
+<style>
+    #body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(81, 200, 255);
+    }
+    #titulo{
+        text-align: center;
+
+    }
+    #principal{
+        background-color: #ffffff;
+        width: 500px;
+        height: 500px;
+        margin: 20px auto;  
+        border-radius: 50px;  
+    }
+    p{
+        display: inline;
+        margin: 50px 0px 20px 20px;
+        font-size: 1.5em;
+    }
+    #sub-titulo{
+        margin: 50px 0px 20px 20px;
+        font-size: 1.5em;
+        display: block;
+        
+    }
+    #check{
+        margin-left: 50px;
+        background-color: rgb(199, 199, 199);
+        padding: 10px;
+        outline: none;
+        border-radius: 20px;
+        cursor: pointer;
+
+    }
+    #check:hover{
+        background-color: rgb(139, 139, 139);
+        color: beige;
+    }
+    #born_time{
+        width: 200px;
+        height: 20px;
+        margin-top: 20px;
+        
+    }
+    #masc,#fem{
+        cursor: pointer;
+    }
+    label{
+        cursor: pointer;
+
+    }
+    footer{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    #res{
+        margin-top: 25px;
+        text-align: center;
+
+    }
+
+
+
+</style>
+<body id="body">
+    <header id="titulo"><h1>digite abaixo seu ano de nascimento e seu sexo</h1></header>
+    <div id="principal">
+        <p>seu ano de nascimento:</p><input type="number" id="born_time" min="1900" max="2019">
+        <p id="sub-titulo">seu sexo:
+        <input type="radio" id="masc" name="sexo"checked>
+        <label for="masc">masculino</label>
+        <input type="radio" id="fem" name="sexo">
+        <label for="fem">feminino</label> 
+        </p>
+        <input type="button" id="check" value="verificar" onclick="clicou()"> 
+       <div id="res">complete o formulario acima</div>
+       
+       
+    </div>
+    <footer id="rodape"><em>&copy; nicolas peluso</em></footer>
+   
+   
+   
+   
+    <script src="script.js"></script>
+</body>
+</html>
